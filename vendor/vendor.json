@@ -1,0 +1,352 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "g2WwQGRfEvXx2dVHNq7SPdCUI/c=",
+			"path": "code.cloudfoundry.org/lager",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "JDComCcjgkS9/bIox0NGLTC/jIo=",
+			"path": "github.com/coreos/etcd/client",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "mKIXx1kDwmVmdIpZ3pJtRBuUKso=",
+			"path": "github.com/coreos/etcd/pkg/pathutil",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "z+C4BtPa8wbOUKW5dmHyhNnTulg=",
+			"path": "github.com/coreos/etcd/pkg/srv",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "fqju8lgR+3vLJLAEPxhV6P7JAHY=",
+			"path": "github.com/coreos/etcd/pkg/types",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "1b/GMybcbMYpL/2VqISd31vttRk=",
+			"path": "github.com/coreos/etcd/version",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "butr+Orbf1fd1hcLqNXYwUDAjcI=",
+			"path": "github.com/coreos/go-semver/semver",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "QeKwBtN2df+j+4stw3bQJ6yO4EY=",
+			"path": "github.com/gin-contrib/sse",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ow9NW7BBNs7ToXqdUcf40f997+8=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "2zQvkwtPsCLc+y7YiHQO2R9Oqd0=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Y8Vu2NT4c2ve963fedBxoJyiU6s=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "afLqBfX9SeIP6eeTZb3WwdTFaOo=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "JXVlDIoOSmyi1QAgDI455Wsr/gY=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "mE9XW26JSpe4meBObM6J/Oeq0eg=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "tkJPssYejSjuAwE2tdEnoEIj93Q=",
+			"path": "github.com/golang/protobuf/ptypes",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "G0aiY+KmzFsQLTNzRAGRhJNSj7A=",
+			"path": "github.com/golang/protobuf/ptypes/any",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "kjVDCbK5/WiHqP1g4GMUxm75jos=",
+			"path": "github.com/golang/protobuf/ptypes/duration",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "FdeygjOuyR2p5v9b0kNOtzfpjS4=",
+			"path": "github.com/golang/protobuf/ptypes/timestamp",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "g/V4qrXjUGG9B+e3hB+4NAYJ5Gs=",
+			"path": "github.com/gorilla/context",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "DOGELl/eJ66TomAnkQqKminijQU=",
+			"path": "github.com/gorilla/mux",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "WqeEgS7pqqkwK8mlrAZmDgtWJMY=",
+			"path": "github.com/json-iterator/go",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "w5RcOnfv5YDr3j2bd1YydkPiZx4=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
+			"path": "github.com/modern-go/concurrent",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZMzoxY0Lv/LbDmyJXFjlMOyXZC4=",
+			"path": "github.com/modern-go/reflect2",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Z/EgNWJL63rVKpUQ3HWuAPli7K4=",
+			"path": "github.com/pivotal-cf/brokerapi",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "mkoLhnEnlXY7YcYODnbhkPnpdwU=",
+			"path": "github.com/pivotal-cf/brokerapi/auth",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "PdQm3s8DoVJ17Vk8n7o5iPa7PK0=",
+			"path": "github.com/pkg/errors",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "uaapj2wMR2fbRBVqKqyfcv/mwTc=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
+			"path": "golang.org/x/net/context",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "pCY4YtdNKVBYRbNvODjx8hj0hIs=",
+			"path": "golang.org/x/net/http/httpguts",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "3p4xISa2iLZULxYfVsIUlHJ+PUk=",
+			"path": "golang.org/x/net/http2",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "KZniwnfpWkaTPhUQDUTvgex/7y0=",
+			"path": "golang.org/x/net/http2/hpack",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "RcrB7tgYS/GMW4QrwVdMOTNqIU8=",
+			"path": "golang.org/x/net/idna",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "UxahDzW2v4mf/+aFxruuupaoIwo=",
+			"path": "golang.org/x/net/internal/timeseries",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "6ckrK99wkirarIfFNX4+AHWBEHM=",
+			"path": "golang.org/x/net/trace",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZerpiXZfy0zb96H+zhsChN+1iYA=",
+			"path": "golang.org/x/sys/unix",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "CbpjEkkOeh0fdM/V8xKDdI0AA88=",
+			"path": "golang.org/x/text/secure/bidirule",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ziMb9+ANGRJSSIuxYdRbA+cDRBQ=",
+			"path": "golang.org/x/text/transform",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "1oQpUH9BjCWlqFPDahRH+UMlYy4=",
+			"path": "golang.org/x/text/unicode/bidi",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "lN2xlA6Utu7tXy2iUoMF2+y9EUE=",
+			"path": "golang.org/x/text/unicode/norm",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "oUD15OBRSXt0t4P0s6HMjH/+iQo=",
+			"path": "google.golang.org/genproto/googleapis/rpc/status",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "HV/AvwdtsJE9iQjBxmZ89+75O1Q=",
+			"path": "google.golang.org/grpc",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "B+kZFVP8zRiQMpoEb39Mp2oSmqg=",
+			"path": "google.golang.org/grpc/balancer",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "lw+L836hLeH8+//le+C+ycddCCU=",
+			"path": "google.golang.org/grpc/balancer/base",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "DJ1AtOk4Pu7bqtUMob95Hw8HPNw=",
+			"path": "google.golang.org/grpc/balancer/roundrobin",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "R3tuACGAPyK4lr+oSNt1saUzC0M=",
+			"path": "google.golang.org/grpc/codes",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "XH2WYcDNwVO47zYShREJjcYXm0Y=",
+			"path": "google.golang.org/grpc/connectivity",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "wA6y5rkH1v4bWBe5M1r/Hdtgma4=",
+			"path": "google.golang.org/grpc/credentials",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "cfLb+pzWB+Glwp82rgfcEST1mv8=",
+			"path": "google.golang.org/grpc/encoding",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "LKKkn7EYA+Do9Qwb2/SUKLFNxoo=",
+			"path": "google.golang.org/grpc/encoding/proto",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZPPSFisPDz2ANO4FBZIft+fRxyk=",
+			"path": "google.golang.org/grpc/grpclog",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "cSdzm5GhbalJbWUNrN8pRdW0uks=",
+			"path": "google.golang.org/grpc/internal",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "uDJA7QK2iGnEwbd9TPqkLaM+xuU=",
+			"path": "google.golang.org/grpc/internal/backoff",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "fvj+rPmX5++NHHTTwG9gHlTEGow=",
+			"path": "google.golang.org/grpc/internal/channelz",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "5dFUCEaPjKwza9kwKqgljp8ckU4=",
+			"path": "google.golang.org/grpc/internal/envconfig",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "70gndc/uHwyAl3D45zqp7vyHWlo=",
+			"path": "google.golang.org/grpc/internal/grpcrand",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "F/QkfMhNApNewEK84d9CM3fT6js=",
+			"path": "google.golang.org/grpc/internal/transport",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "hcuHgKp8W0wIzoCnNfKI8NUss5o=",
+			"path": "google.golang.org/grpc/keepalive",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "OjIAi5AzqlQ7kLtdAyjvdgMf6hc=",
+			"path": "google.golang.org/grpc/metadata",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "VvGBoawND0urmYDy11FT+U1IHtU=",
+			"path": "google.golang.org/grpc/naming",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "n5EgDdBqFMa2KQFhtl+FF/4gIFo=",
+			"path": "google.golang.org/grpc/peer",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "GEq6wwE1qWLmkaM02SjxBmmnHDo=",
+			"path": "google.golang.org/grpc/resolver",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "3aaLCpBkkCNQvVPHyvPi+G0vnQI=",
+			"path": "google.golang.org/grpc/resolver/dns",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "zs9M4xE8Lyg4wvuYvR00XoBxmuw=",
+			"path": "google.golang.org/grpc/resolver/passthrough",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "YclPgme2gT3S0hTkHVdE1zAxJdo=",
+			"path": "google.golang.org/grpc/stats",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "t/NhHuykWsxY0gEBd2WIv5RVBK8=",
+			"path": "google.golang.org/grpc/status",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "qvArRhlrww5WvRmbyMF2mUfbJew=",
+			"path": "google.golang.org/grpc/tap",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": ""
+		}
+	],
+	"rootPath": "github.com/asiainfoldp/datafoundry-mysql-servicebroker"
+}

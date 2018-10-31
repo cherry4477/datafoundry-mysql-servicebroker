@@ -69,5 +69,10 @@ func handle() (router *gin.Engine) {
 	authorized.GET("/v2/catalog", handler.Catalog)
 	authorized.PUT("/v2/service_instances/:instance_id", handler.Provision)
 	authorized.DELETE("/v2/service_instances/:instance_id", handler.Deprovision)
+
+	authorized.GET("/v2/service_instances/:instance_id/last_operation", handler.LastOperation)
+	authorized.PATCH("/v2/service_instances/:instance_id", handler.Update)
+	authorized.PUT("/v2/service_instances/:instance_id/service_bindings/:binding_id", handler.Bind)
+	authorized.DELETE("/v2/service_instances/:instance_id/service_bindings/:binding_id", handler.Unbind)
 	return
 }

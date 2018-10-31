@@ -4,11 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/asiainfoldp/datafoundry-mysql-servicebroker/servicebrokers"
 	"github.com/coreos/etcd/client"
 	"github.com/gin-gonic/gin"
 	"github.com/pivotal-cf/brokerapi"
-	"github.com/pivotal-golang/lager"
+	"code.cloudfoundry.org/lager"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -20,8 +19,6 @@ var Logger lager.Logger
 var ConfigPath string
 var etcdclient EtcdClient
 var servcieBrokerName string
-
-const MyCatServcieBroker = "MyCat_MySQL"
 
 func init() {
 	servcieBrokerName = "mycatshare"
@@ -165,7 +162,7 @@ func Provision(c *gin.Context) {
 		return
 	}
 
-	myHandler, err := servicebrokers.New(MyCatServcieBroker)
+	myHandler, err := NewHandler(MyCatServcieBroker)
 	if err != nil {
 		Logger.Error("Can not found handler for service "+service_name+" plan "+plan_name, err)
 		errorRep.Error = err.Error()
@@ -250,6 +247,7 @@ func Provision(c *gin.Context) {
 
 	prvsRsp := brokerapi.ProvisioningResponse{
 		DashboardURL: provsiondetail.DashboardURL,
+		Credentials:  provsiondetail.Credentials,
 	}
 
 	if provsiondetail.IsAsync {
@@ -263,7 +261,7 @@ func Provision(c *gin.Context) {
 
 func Deprovision(c *gin.Context) {
 
-	var myServiceInfo servicebrokers.ServiceInfo
+	var myServiceInfo ServiceInfo
 
 	errorRep := brokerapi.ErrorResponse{}
 
@@ -329,7 +327,7 @@ func Deprovision(c *gin.Context) {
 	json.Unmarshal([]byte(resp.Node.Value), &myServiceInfo)
 
 	//生成具体的handler对象
-	myHandler, err := servicebrokers.New(MyCatServcieBroker)
+	myHandler, err := NewHandler(MyCatServcieBroker)
 
 	//没有找到具体的handler，这里如果没有找到具体的handler不是由于用户输入的，是不对的，报500错误
 	if err != nil {
@@ -372,6 +370,38 @@ func Deprovision(c *gin.Context) {
 	c.JSON(http.StatusOK, brokerapi.EmptyResponse{})
 	return
 
+}
+
+func LastOperation(c *gin.Context) {
+	errorRep := brokerapi.ErrorResponse{}
+	errorRep.Error = errors.New("Service Unavailable").Error()
+	errorRep.Description = "Service Unavailable"
+	c.JSON(http.StatusServiceUnavailable, brokerapi.EmptyResponse{})
+	return
+}
+
+func Update(c *gin.Context) {
+	errorRep := brokerapi.ErrorResponse{}
+	errorRep.Error = errors.New("Service Unavailable").Error()
+	errorRep.Description = "Service Unavailable"
+	c.JSON(http.StatusServiceUnavailable, brokerapi.EmptyResponse{})
+	return
+}
+
+func Bind(c *gin.Context) {
+	errorRep := brokerapi.ErrorResponse{}
+	errorRep.Error = errors.New("Service Unavailable").Error()
+	errorRep.Description = "Service Unavailable"
+	c.JSON(http.StatusServiceUnavailable, brokerapi.EmptyResponse{})
+	return
+}
+
+func Unbind(c *gin.Context) {
+	errorRep := brokerapi.ErrorResponse{}
+	errorRep.Error = errors.New("Service Unavailable").Error()
+	errorRep.Description = "Service Unavailable"
+	c.JSON(http.StatusServiceUnavailable, brokerapi.EmptyResponse{})
+	return
 }
 
 func findServiceNameInCatalog(service_id string) string {
