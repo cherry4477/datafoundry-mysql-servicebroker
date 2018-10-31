@@ -40,6 +40,7 @@ $ETCDCTL set /servicebroker/mycatshare/catalog/EB1045DE-5FEA-4A60-9455-3727E1C0F
 $ETCDCTL set /servicebroker/mycatshare/catalog/EB1045DE-5FEA-4A60-9455-3727E1C0FD1C/plan/619A6421-386E-4684-BBB4-915E406D58F9/description "单独实例"
 $ETCDCTL set /servicebroker/mycatshare/catalog/EB1045DE-5FEA-4A60-9455-3727E1C0FD1C/plan/619A6421-386E-4684-BBB4-915E406D58F9/metadata '{"displayName":"Shared and Free"}'
 $ETCDCTL set /servicebroker/mycatshare/catalog/EB1045DE-5FEA-4A60-9455-3727E1C0FD1C/plan/619A6421-386E-4684-BBB4-915E406D58F9/free true
+$ETCDCTL set /servicebroker/mycatshare/catalog/EB1045DE-5FEA-4A60-9455-3727E1C0FD1C/plan/619A6421-386E-4684-BBB4-915E406D58F9/schemas '{"service_instance":{"create":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"ATTR_dbname":{"description":"Mysql DB Name created.","type":"string"}}}},"update":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"wuxiao":{"description":"Bie luan tian.","type":"string"}}}}},"service_binding":{"create":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"wuxiao":{"description":"Beiluantian.","type":"string"}}}}}}'
 
 
 
@@ -64,3 +65,4 @@ $ETCDCTL set /servicebroker/mycatshare/catalog/5B69E4E7-1E1D-41B6-993E-10BEDE540
 $ETCDCTL set /servicebroker/mycatshare/catalog/5B69E4E7-1E1D-41B6-993E-10BEDE540D4B/plan/252817FA-CF50-4BA0-A1D8-74B8219F395F/description "单独实例"
 $ETCDCTL set /servicebroker/mycatshare/catalog/5B69E4E7-1E1D-41B6-993E-10BEDE540D4B/plan/252817FA-CF50-4BA0-A1D8-74B8219F395F/metadata '{"displayName":"Shared and Free"}'
 $ETCDCTL set /servicebroker/mycatshare/catalog/5B69E4E7-1E1D-41B6-993E-10BEDE540D4B/plan/252817FA-CF50-4BA0-A1D8-74B8219F395F/free true
+$ETCDCTL set /servicebroker/mycatshare/catalog/5B69E4E7-1E1D-41B6-993E-10BEDE540D4B/plan/252817FA-CF50-4BA0-A1D8-74B8219F395F/schemas '{"service_instance":{"create":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"ATTR_dbname":{"description":"Mysql DB Name created.","type":"string"}}}},"update":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"wuxiao":{"description":"Bie luan tian.","type":"string"}}}}},"service_binding":{"create":{"parameters":{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"wuxiao":{"description":"Beiluantian.","type":"string"}}}}}}'
